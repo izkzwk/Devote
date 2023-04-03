@@ -127,7 +127,7 @@ struct ContentView: View {
           .frame(maxWidth: 640)
         } //: VSTACK
         .blur(radius: showNewTaskItem ? 8.0 : 0, opaque: false)
-        .animation(.easeOut(duration: 0.5))
+        .animation(.easeOut(duration: 0.5), value: 3) // my value
         .transition(.move(edge: .bottom))
         
         // MARK: - NEW TASK ITEM
